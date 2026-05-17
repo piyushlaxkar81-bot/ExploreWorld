@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking - ExploreWorld.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="card" data-aos="fade-right" class="logo">ExploreWorld</h2>
+            <ul class="nav-links">
+                <li class="card" data-aos="fade-left"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="card" data-aos="fade-left"><a href="destinations.html"><i class="fa-solid fa-location-dot"></i> Destinations</a></li>
+                <li class="card" data-aos="fade-left"><a href="packages.html"><i class="fa-solid fa-plane-departure"></i> Packages</a></li>
+                <li class="card" data-aos="fade-left"><a href="booking.html"><i class="fa-solid fa-calendar-check"></i> Booking</a></li>
+                <li class="card" data-aos="fade-left"><a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking">
+        <div class="booking-box" data-aos="zoom-in">
+            <h1>Book Your Dream Trip</h1>
+            <form>
+                <input type="text" placeholder="👤 Full Name">
+
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option value="">Select Destination</option>
+                    <option>Dubai</option>
+                    <option>Paris</option>
+                    <option>Switzerland</option>
+                </select>
+
+                <input type="date" required>
+
+                <input type="number" placeholder="Number of Guests" required>
+
+                <button type="submit">Confirm Booking</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <marquee><p>© 2026 ExploreWorld | All Rights Reserved | Designed by Piyush Lakhara</p></marquee>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation speed
+            once: true        // animation only once
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - ExploreWorld.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="card" data-aos="fade-right" class="logo">ExploreWorld</h2>
+            <ul class="nav-links">
+                <li class="card" data-aos="fade-left"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="card" data-aos="fade-left"><a href="destinations.html"><i class="fa-solid fa-location-dot"></i> Destinations</a></li>
+                <li class="card" data-aos="fade-left"><a href="packages.html"><i class="fa-solid fa-plane-departure"></i> Packages</a></li>
+                <li class="card" data-aos="fade-left"><a href="booking.html"><i class="fa-solid fa-calendar-check"></i> Booking</a></li>
+                <li class="card" data-aos="fade-left"><a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-container">
+
+            <!-- LEFT SIDE -->
+            <div class="contact-info" data-aos="fade-right">
+
+                <h1>Get in Touch</h1>
+                <p>We are here to help you plan your perfect trip.</p>
+
+                <p><i class="fa fa-map-marker-alt"></i> India</p>
+                <p><i class="fa fa-phone"></i> +91 9876543210</p>
+                <p><i class="fa fa-envelope"></i> ExploreWorld@email.com</p>
+
+                <div class="social-icons">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE FORM -->
+            <div class="contact-form" data-aos="fade-left">
+
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAP -->
+    <div class="map" data-aos="zoom-in">
+        <iframe src="https://maps.google.com/maps?q=india&t=&z=5&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <marquee><p>© 2026 ExploreWorld | All Rights Reserved | Designed by Piyush Lakhara</p></marquee>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation speed
+            once: true        // animation only once
+        });
+    </script>
+
+</body>
+</html>
