@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -180,7 +180,8 @@ body{
 
 /* IMAGE */
 .card img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
     transition: 0.4s;
@@ -482,4 +483,64 @@ body{
     width: 100%;
     height: 300px;
     border: none;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+    }
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero & Main Content Centers */
+    .home-content h1, .home-content p, .hero .btn,
+    .main-content h2, .main-content p {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        text-align: center;
+    }
+    .home-content, .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        z-index: 2;
+    }
+    .home-content h1 { font-size: 40px; }
+    .main-content h2 { font-size: 35px; }
+
+    /* Cards */
+    .destinations { padding: 40px 20px; }
+    .row, .row.reverse {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .content h2 { font-size: 32px; text-align: center; }
+    .content p { text-align: center; }
+
+    /* Packages */
+    .packages { padding: 50px 20px; }
+    .packages h1 { left: 0; margin-bottom: 50px; font-size: 32px; text-align: center; }
+
+    /* Booking */
+    .booking-box { width: 90%; padding: 20px; }
+
+    /* Contact */
+    .contact { padding: 40px 20px; }
+    .contact-container {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
 }
